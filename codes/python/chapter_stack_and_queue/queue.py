@@ -6,12 +6,14 @@ Author: Peng Chen (pengchzn@gmail.com)
 
 from collections import deque
 
+
 """Driver Code"""
 if __name__ == "__main__":
     # 初始化队列
     # 在 Python 中，我们一般将双向队列类 deque 看作队列使用
     # 虽然 queue.Queue() 是纯正的队列类，但不太好用
-    que: deque[int] = deque()
+    # que: deque[int] = deque()
+    que = deque()
 
     # 元素入队
     que.append(1)
@@ -29,6 +31,7 @@ if __name__ == "__main__":
     pop: int = que.popleft()
     print("出队元素 pop =", pop)
     print("出队后 que =", que)
+    print(que)
 
     # 获取队列的长度
     size: int = len(que)
